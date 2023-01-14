@@ -11,7 +11,7 @@ const burger_title_menu = document.querySelector("#burger-title-menu");
 
 const drop_menu = document.querySelector("#menu");
 
-menu_btn.addEventListener("click", (e) => {
+burger_container.addEventListener("click", (e) => {
   if (drop_menu.classList.contains("open")) {
     drop_menu.classList.remove("open");
     burger_title_menu.textContent = "MENU";

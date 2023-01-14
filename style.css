@@ -229,7 +229,7 @@ button.btn-solid {
 header {
   width: 100%;
   height: 90px;
-  box-shadow: 0 3px 3px 4px rgba(21, 31, 60, 0.612);
+  box-shadow: 0 3px 3px 4px rgba(21, 31, 60, 0.4);
   display: flex;
   align-items: center;
   z-index: 100;
@@ -264,6 +264,7 @@ header > div {
   font-weight: 600;
   letter-spacing: 0.5ch;
   transition: letter-spacing 0.25s, margin 0.25s;
+  cursor: default;
 }
 
 .burger-container > h5.open {
@@ -420,7 +421,6 @@ div.bar {
   font-weight: 800;
   color: #415a7b;
   white-space: nowrap;
-  /* width: fit-content; */
 }
 
 /* ########## ## Header Search ############ */
@@ -443,6 +443,91 @@ div.bar {
 }
 
 /* ######################## # NAV MENU ######################### */
+
+#menu {
+  height: 0;
+  position: absolute;
+  background-color: white;
+  overflow-y: hidden;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  border-bottom: solid 5px #1b3a61;
+
+  transition: height 0.5s;
+}
+
+#menu > ul {
+  width: 25%;
+  padding: 30px;
+  text-align: center;
+  background-color: #f3f6f9;
+}
+
+#menu.open {
+  height: 500px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.281);
+}
+
+.modal-nav a {
+  color: #333333;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-links-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 25px 50px;
+}
+
+.site-links-container > div {
+  width: 280px;
+  height: 250px;
+}
+
+.site-links-container hr {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.site-links-container > div > h4 {
+  font-size: 1rem;
+  color: #1b3a61;
+}
+
+.site-links-container > div > ul a {
+  color: #333333;
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 875px) {
+  #menu.open {
+    flex-direction: column;
+    height: 600px;
+  }
+
+  #menu > .modal-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .modal-nav > hr {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #menu.open {
+    height: unset;
+  }
+}
 
 /* ######################## # HERO ######################### */
 
