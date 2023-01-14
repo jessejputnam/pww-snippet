@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="South Carolina Revenue and Fiscal Affairs Office"
+    />
+    <meta property="og:image" content="https://example.com/image.jpg" />
+    <meta
+      property="og:image:alt"
+      content="A description of what is in the image (not a caption)"
+    />
+    <meta
+      property="og:description"
+      content="Official website for the South Carolina Revenue and Fiscal Affairs Office"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto+Condensed&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+
+    <!-- Favicon -->
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+
+    <title>South Carolina Revenue and Fiscal Affairs Office</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <div class="burger-container">
+        <div id="burger">
+          <div class="bar bar-top"></div>
+          <div class="bar bar-mid"></div>
+          <div class="bar bar-low"></div>
+        </div>
+        <p>MENU</p>
+      </div>
+
+      <div>
+        <img src="/images/logo.png" />
+
+        <div>
+          <h1 class="header-title">
+            SOUTH CAROLINA <br />
+            REVENUE AND FISCAL AFFAIRS OFFICE
+          </h1>
+          <em class="header-tagline"
+            >Transforming data into solutions for South Carolina</em
+          >
+        </div>
+      </div>
+
+      <nav id="desktop-nav">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Boards & Committees</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn-stroke">
+        <div class="material-symbols-outlined">search</div>
+      </button>
+    </header>
+
+    <main>
+      <!-- DROP DOWN NAV MENU -->
+      <nav class="hidden"></nav>
+
+      <!-- HERO -->
+      <div class="top-container">
+        <div class="hero-container">
+          <p>
+            Providing independent research, analysis, and resources to
+            facilitate informed policy decisions and administration of services
+          </p>
+
+          <form method="GET" action="/search">
+            <input
+              id="searchTerm"
+              type="text"
+              placeholder="Search rfa.sc.gov"
+            />
+            <button class="btn btn-solid" type="submit">
+              SEARCH <span class="material-symbols-outlined">search</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- EXAMPLES CARDS -->
+        <div>
+          <div class="card">
+            <img
+              src="/images/Data-Research-Icon.svg"
+              alt="An icon of a bar graph"
+              height="100"
+            />
+            <p>DATA & RESEARCH</p>
+          </div>
+          <div class="card">
+            <img
+              src="/images/Geography-Icon.svg"
+              alt="An icon of a globe and a country"
+              height="100"
+            />
+            <p>GEOGRAPHY & MAPPING</p>
+          </div>
+          <div class="card">
+            <img
+              src="/images/Programs-Icon.svg"
+              alt="An icon of program windows"
+              height="100"
+            />
+            <p>PROGRAMS & SERVICES</p>
+          </div>
+          <div class="card">
+            <img
+              src="/images/Legislative-Icon.svg"
+              alt="An icon of a bag of money and calculator"
+              height="100"
+            />
+            <p>LEGISLATIVE & FISCAL IMPACTS</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- POPULAR SERVICES AND LINKS -->
+      <section>
+        <h2>POPULAR SERVICES AND LINKS</h2>
+        <hr class="blue-header" />
+
+        <ul>
+          <li>
+            <a href="#"
+              >Overview and History of the South Carolina State Budget</a
+            >
+          </li>
+
+          <li>
+            <a href="#">Employer Contribution Trends</a>
+          </li>
+
+          <li>
+            <a href="#">Appropriation Bills and Acts</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">Overview and History of the South Carolina Budget</a>
+          </li>
+
+          <li>
+            <a href="#">Employer Contribution Trends - June 4, 2019</a>
+          </li>
+
+          <li>
+            <a href="#"
+              >Executive Budget Office State Agency Budget Plans(Requests)</a
+            >
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">Overview and History of the South Carolina Budget</a>
+          </li>
+
+          <li>
+            <a href="#">Employer Contribution Trends - June 4, 2019</a>
+          </li>
+
+          <li>
+            <a href="#"
+              >Executive Budget Office State Agency Budget Plans(Requests)</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- Updates & Events -->
+      <div>
+        <!-- Recent Updates -->
+        <section>
+          <h3>Recent Updates</h3>
+          <hr class="gold-bar-header" />
+
+          <ul>
+            <li>
+              <a href="#">Local Government Finance</a>
+              <p>
+                Vestibulum rtrum quam vitae fringilla tincidunt. Suspendisse nec
+                tortor urna. Ut laoreet sodales
+              </p>
+              <div class="timestamp">
+                <p><strong>Published:</strong> Jan. 2, 2020</p>
+                <p class="flag">Updated</p>
+              </div>
+            </li>
+
+            <li>
+              <a href="#">Transportation Network Carrier Maps</a>
+              <div class="timestamp">
+                <p><strong>Published:</strong> Jan. 2, 2020</p>
+                <p class="flag">New</p>
+              </div>
+            </li>
+
+            <li>
+              <a href="#"
+                >BEA Long-Range General Fund Revenue Plan for FY 2019-20 to FY
+                2022-23</a
+              >
+              <p>
+                Vestibulum rtrum quam vitae fringilla tincidunt. Suspendisse nec
+                tortor urna. Ut laoreet sodales
+              </p>
+              <div class="timestamp">
+                <p><strong>Published:</strong> Dec. 16, 2019</p>
+                <p class="flag">Updated</p>
+              </div>
+            </li>
+
+            <li>
+              <a href="#">Budget Development</a>
+              <div class="timestamp">
+                <p><strong>Published:</strong> Dec. 16, 2019</p>
+                <p class="flag">New</p>
+              </div>
+            </li>
+
+            <li>
+              <a href="#">November 2019 General Fund Revenue Digest</a>
+              <div class="timestamp">
+                <p><strong>Published:</strong> Dec. 13, 2019</p>
+                <p class="flag">New</p>
+              </div>
+            </li>
+          </ul>
+
+          <button class="btn btn-solid">View More</button>
+        </section>
+
+        <!-- Calendar of Events -->
+        <section>
+          <h3>Calendar of Events</h3>
+          <hr class="gold-bar-header" />
+
+          <ul>
+            <li>
+              <div class="cal-date">
+                <p class="cal-month">NOV</p>
+                <p class="cal-num">22</p>
+              </div>
+
+              <div>
+                <p class="flag flag-updated">Updated</p>
+                <h4>Board of Economic Advisors Meeting</h4>
+                <p>
+                  <span class="material-symbols-outlined">location_on</span>
+                  Room 417, Bowers Conference Room, Rembert Dennis Building
+                </p>
+                <p>
+                  <span class="material-symbols-outlined">schedule</span> 1:30
+                  pm
+                </p>
+                <p>
+                  <span class="material-symbols-outlined">remember_me</span>
+                  (803) 734-2265
+                </p>
+              </div>
+            </li>
+
+            <hr />
+
+            <li>
+              <div class="cal-date">
+                <p class="cal-month">NOV</p>
+                <p class="cal-num">23</p>
+              </div>
+
+              <div>
+                <p class="flag flag-canceled">Canceled</p>
+                <h4>Board of Economic Advisors Meeting</h4>
+                <p>
+                  <span class="material-symbols-outlined">location_on</span>
+                  Room 417, Bowers Conference Room, Rembert Dennis Building
+                </p>
+                <p>
+                  <span class="material-symbols-outlined">schedule</span> 1:30
+                  pm
+                </p>
+                <p>
+                  <span class="material-symbols-outlined">remember_me</span>
+                  (803) 734-2265
+                </p>
+              </div>
+            </li>
+
+            <hr />
+
+            <li>
+              <div class="cal-date">
+                <p class="cal-month">NOV</p>
+                <p class="cal-num">25</p>
+              </div>
+
+              <div>
+                <h4>Board of Economic Advisors Meeting</h4>
+                <p>
+                  <span class="material-symbols-outlined">location_on</span>
+                  Room 417, Bowers Conference Room, Rembert Dennis Building
+                </p>
+                <p>
+                  <span class="material-symbols-outlined">schedule</span> 1:30
+                  pm
+                </p>
+                <p>
+                  <span class="material-symbols-outlined">remember_me</span>
+                  (803) 734-2265
+                </p>
+              </div>
+            </li>
+
+            <hr />
+
+            <li>
+              <div class="cal-date">
+                <p class="cal-month">NOV</p>
+                <p class="cal-num">28</p>
+              </div>
+
+              <div>
+                <h4>Board of Economic Advisors Meeting</h4>
+                <p>
+                  <span class="material-symbols-outlined">location_on</span>
+                  Room 417, Bowers Conference Room, Rembert Dennis Building
+                </p>
+                <p>
+                  <span class="material-symbols-outlined">schedule</span> 1:30
+                  pm
+                </p>
+                <p>
+                  <span class="material-symbols-outlined">remember_me</span>
+                  (803) 734-2265
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <button class="btn btn-solid">VIEW ALL EVENTS</button>
+        </section>
+      </div>
+
+      <div>
+        <p>Back to Top</p>
+        <button class="btn btn-top"></button>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <h3>
+          South Carolina <br />
+          Revenue and Fiscal Affairs Office
+        </h3>
+        <img src="/images/logo-imprint.png" alt="Logo" />
+      </div>
+
+      <ul>
+        <li>
+          <a>Privacy Statement</a>
+        </li>
+        <li>
+          <a>FOIA</a>
+        </li>
+        <li>
+          <a>Disclosures and Reporting</a>
+        </li>
+        <li>
+          <a>Report Fraud</a>
+        </li>
+        <li>
+          <a>Accessibility</a>
+        </li>
+        <li>
+          <a>Contact Us</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <h5>Main Office</h5>
+          <p>
+            1000 Assembly St, Rembert Dennis Building, Suite 421<br />Columbia,
+            SC 29201
+          </p>
+        </li>
+
+        <li>
+          <h5>Geodetic Survey Section</h5>
+          <p>5 Geology Rd<br />Columbia, SC 29201</p>
+        </li>
+
+        <li>
+          <h5>Health and Demographics Division</h5>
+          <p>
+            1000 Assembly St, Rembert Dennis Building, Suite 240<br />Columbia,
+            SC 29201
+          </p>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
