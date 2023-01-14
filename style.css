@@ -587,7 +587,7 @@ div.bar {
 
 .hero-container {
   min-height: 350px;
-  background-image: url("/images/shutterstock_42474535.jpg");
+  background-image: url("images/shutterstock_42474535.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
