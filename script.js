@@ -1,17 +1,22 @@
 "use strict";
 
-//
-
+// Hamburger
 const burger_container = document.querySelector(".burger-container");
-const menu_btn = document.querySelector("#burger");
 const bar_top = document.querySelector("#bar-top");
 const bar_mid = document.querySelector("#bar-mid");
 const bar_low = document.querySelector("#bar-low");
 const burger_title_menu = document.querySelector("#burger-title-menu");
 
+// Drop Menu
 const drop_menu = document.querySelector("#menu");
 
-burger_container.addEventListener("click", (e) => {
+// Drop Search
+const drop_search_btn = document.querySelector(".btn-header-search");
+const drop_search = document.querySelector("#header-search-container");
+
+// ################################
+
+burger_container.addEventListener("click", () => {
   if (drop_menu.classList.contains("open")) {
     drop_menu.classList.remove("open");
     burger_title_menu.textContent = "MENU";
@@ -30,5 +35,15 @@ burger_container.addEventListener("click", (e) => {
     bar_top.classList.add("open");
     bar_mid.classList.add("open");
     bar_low.classList.add("open");
+  }
+});
+
+drop_search_btn.addEventListener("click", () => {
+  if (drop_search.classList.contains("open")) {
+    drop_search.classList.remove("open");
+    drop_search_btn.classList.remove("open");
+  } else {
+    drop_search.classList.add("open");
+    drop_search_btn.classList.add("open");
   }
 });

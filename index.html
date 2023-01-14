@@ -86,21 +86,20 @@
 
       <button class="btn btn-stroke btn-header-search">
         <div class="material-symbols-rounded">Search</div>
-
-        <div class="hidden">
-          <form method="GET" action="/search">
-            <input
-              id="searchTerm"
-              type="text"
-              placeholder="Search rfa.sc.gov"
-            />
-            <button class="btn btn-solid hidden" type="submit">SEARCH</button>
-          </form>
-        </div>
       </button>
     </header>
 
     <main>
+      <div id="header-search-container">
+        <form method="GET" action="/search">
+          <input
+            id="searchTermHeader"
+            type="text"
+            placeholder="Enter search term"
+          />
+          <button class="btn btn-solid" type="submit">SEARCH</button>
+        </form>
+      </div>
       <!-- DROP DOWN NAV MENU -->
       <nav id="menu">
         <ul class="modal-nav">
@@ -492,7 +491,11 @@
           South Carolina <br />
           Revenue and Fiscal Affairs Office
         </h2>
-        <img src="/images/logo-imprint.png" alt="Logo" height="120" />
+        <img
+          src="/images/logo-imprint.png"
+          alt="Official seal for South Carolina"
+          height="120"
+        />
       </div>
 
       <ul>
