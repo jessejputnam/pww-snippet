@@ -13,6 +13,7 @@ const drop_menu = document.querySelector("#menu");
 // Drop Search
 const drop_search_btn = document.querySelector(".btn-header-search");
 const drop_search = document.querySelector("#header-search-container");
+const drop_search_input = document.querySelector("#searchTermHeader");
 
 // ################################
 
@@ -40,6 +41,8 @@ burger_container.addEventListener("click", () => {
 
 drop_search_btn.addEventListener("click", () => {
   if (drop_search.classList.contains("open")) {
+    drop_search_input.value = "";
+
     drop_search.classList.remove("open");
     drop_search_btn.classList.remove("open");
   } else {
