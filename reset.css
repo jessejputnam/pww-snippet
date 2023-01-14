@@ -32,8 +32,8 @@ select {
   font: inherit;
 }
 
-main {
-  display: block;
+div {
+  width: 100%;
 }
 
 button,
