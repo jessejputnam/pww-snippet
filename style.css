@@ -7,12 +7,14 @@
     ## Buttons
     ## States
   # Header
+    ## Hamburger
+    ## Title
   # Main
   # Footer
 
 */
 
-/* ############ # FORMAT ################ */
+/* ######################## # FORMAT ########################## */
 
 /* ########## ## Typography ############ */
 body {
@@ -108,10 +110,127 @@ hr.gold-bar-header {
   background-color: #8c6910;
 }
 
-.material-symbols-outlined {
+.material-symbols-rounded {
   font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 48;
 }
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  padding: 9px;
+  height: 45px;
+}
+
+.btn-stroke {
+  border: solid 2px #35b0cb;
+}
+
 /* ########## ## States ############ */
 .hidden {
   display: none;
+}
+
+/* ######################## # HEADER ######################### */
+
+header {
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 3px 3px 4px rgba(0, 0, 0, 0.654);
+  display: flex;
+  align-items: center;
+}
+
+header > div {
+  display: flex;
+}
+
+/* ########## ## Hamburger ############ */
+
+div.burger-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3068ad;
+  color: white;
+  width: 60px;
+  height: 100%;
+  text-align: center;
+}
+
+.burger-container > h5 {
+  margin-top: 5px;
+  font-size: 0.55rem;
+  font-weight: 600;
+}
+
+#burger {
+  height: 25px;
+  width: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+div.bar {
+  border: solid 1.5px white;
+  height: 2px;
+  border-radius: 2px;
+  background-color: white;
+}
+
+/* ########## ## Title ############ */
+.header-title-container {
+  flex-grow: 2;
+  align-items: center;
+}
+
+.header-title-container > a {
+  margin: 0 15px 0 25px;
+}
+
+.header-title {
+  font-family: "Roboto Slab", serif;
+  line-height: 1.2em;
+}
+
+.header-title > h1 {
+  color: #1b3a61;
+}
+
+.header-title > em {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
+  color: #415a7b;
+}
+
+#desktop-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+#desktop-nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.desktop-nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #415a7b;
+}
+
+.btn-header-search {
+  border-radius: 3px;
+}
+
+.btn-header-search > .material-symbols-rounded {
+  font-variation-settings: "wght" 700;
+  color: #0074c1;
 }

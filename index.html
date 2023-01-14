@@ -31,7 +31,7 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
 
     <!-- Styles -->
@@ -48,21 +48,30 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header>
       <div class="burger-container">
         <div id="burger">
-          <div class="bar bar-top"></div>
-          <div class="bar bar-mid"></div>
-          <div class="bar bar-low"></div>
+          <div id="bar-top" class="bar"></div>
+          <div id="bar-mid" class="bar"></div>
+          <div id="bar-low" class="bar"></div>
         </div>
-        <p>MENU</p>
+
+        <h5 id="burger-title-menu">MENU</h5>
+        <h5 id="burger-title-close" class="hidden">CLOSE</h5>
       </div>
 
-      <div>
-        <img src="/images/logo.png" />
+      <div class="header-title-container">
+        <a href="#">
+          <img
+            src="/images/logo.png"
+            alt="Official office seal"
+            height="75px"
+          />
+        </a>
 
-        <div>
-          <h1 class="header-title">
+        <div class="header-title">
+          <h1>
             SOUTH CAROLINA <br />
             REVENUE AND FISCAL AFFAIRS OFFICE
           </h1>
@@ -74,13 +83,25 @@
 
       <nav id="desktop-nav">
         <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Boards & Committees</a></li>
+          <li><a class="desktop-nav-link" href="#">About Us</a></li>
+          <li><a class="desktop-nav-link" href="#">Events</a></li>
+          <li><a class="desktop-nav-link" href="#">Boards & Committees</a></li>
         </ul>
       </nav>
-      <button class="btn btn-stroke">
-        <div class="material-symbols-outlined">search</div>
+
+      <button class="btn btn-stroke btn-header-search">
+        <div class="material-symbols-rounded">Search</div>
+
+        <div class="hidden">
+          <form method="GET" action="/search">
+            <input
+              id="searchTerm"
+              type="text"
+              placeholder="Search rfa.sc.gov"
+            />
+            <button class="btn btn-solid hidden" type="submit">SEARCH</button>
+          </form>
+        </div>
       </button>
     </header>
 
@@ -187,7 +208,7 @@
               placeholder="Search rfa.sc.gov"
             />
             <button class="btn btn-solid" type="submit">
-              SEARCH <span class="material-symbols-outlined">search</span>
+              SEARCH <span class="material-symbols-rounded">search</span>
             </button>
           </form>
         </div>
@@ -362,15 +383,14 @@
                 <p class="flag flag-updated">Updated</p>
                 <h4>Board of Economic Advisors Meeting</h4>
                 <p>
-                  <span class="material-symbols-outlined">location_on</span>
+                  <span class="material-symbols-rounded">location_on</span>
                   Room 417, Bowers Conference Room, Rembert Dennis Building
                 </p>
                 <p>
-                  <span class="material-symbols-outlined">schedule</span> 1:30
-                  pm
+                  <span class="material-symbols-rounded">schedule</span> 1:30 pm
                 </p>
                 <p>
-                  <span class="material-symbols-outlined">remember_me</span>
+                  <span class="material-symbols-rounded">remember_me</span>
                   (803) 734-2265
                 </p>
               </div>
@@ -388,15 +408,14 @@
                 <p class="flag flag-canceled">Canceled</p>
                 <h4>Board of Economic Advisors Meeting</h4>
                 <p>
-                  <span class="material-symbols-outlined">location_on</span>
+                  <span class="material-symbols-rounded">location_on</span>
                   Room 417, Bowers Conference Room, Rembert Dennis Building
                 </p>
                 <p>
-                  <span class="material-symbols-outlined">schedule</span> 1:30
-                  pm
+                  <span class="material-symbols-rounded">schedule</span> 1:30 pm
                 </p>
                 <p>
-                  <span class="material-symbols-outlined">remember_me</span>
+                  <span class="material-symbols-rounded">remember_me</span>
                   (803) 734-2265
                 </p>
               </div>
@@ -413,15 +432,14 @@
               <div>
                 <h4>Board of Economic Advisors Meeting</h4>
                 <p>
-                  <span class="material-symbols-outlined">location_on</span>
+                  <span class="material-symbols-rounded">location_on</span>
                   Room 417, Bowers Conference Room, Rembert Dennis Building
                 </p>
                 <p>
-                  <span class="material-symbols-outlined">schedule</span> 1:30
-                  pm
+                  <span class="material-symbols-rounded">schedule</span> 1:30 pm
                 </p>
                 <p>
-                  <span class="material-symbols-outlined">remember_me</span>
+                  <span class="material-symbols-rounded">remember_me</span>
                   (803) 734-2265
                 </p>
               </div>
@@ -438,15 +456,14 @@
               <div>
                 <h4>Board of Economic Advisors Meeting</h4>
                 <p>
-                  <span class="material-symbols-outlined">location_on</span>
+                  <span class="material-symbols-rounded">location_on</span>
                   Room 417, Bowers Conference Room, Rembert Dennis Building
                 </p>
                 <p>
-                  <span class="material-symbols-outlined">schedule</span> 1:30
-                  pm
+                  <span class="material-symbols-rounded">schedule</span> 1:30 pm
                 </p>
                 <p>
-                  <span class="material-symbols-outlined">remember_me</span>
+                  <span class="material-symbols-rounded">remember_me</span>
                   (803) 734-2265
                 </p>
               </div>
