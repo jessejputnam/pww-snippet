@@ -11,6 +11,7 @@
     ## Title
     ## Desktop Nav
     ## Header Search
+  # Nav Menu
   # Hero
     ## Cards
   # Popular Services Links
@@ -30,8 +31,6 @@ html {
 main {
   display: flex;
   flex-direction: column;
-  /* width: 99vw; */
-  /* width: 100%; */
   padding: 0;
 
   align-items: center;
@@ -190,11 +189,34 @@ ul {
 
 .btn-stroke {
   border: solid 2px #0074c1;
+  color: #0074c1;
+}
+
+@media (hover: hover) {
+  .btn-stroke:hover {
+    color: white;
+    background-color: #0074c1;
+  }
+}
+
+.btn-stroke:active {
+  color: white;
+  border-color: #1b3a61;
 }
 
 button.btn-solid {
   background-color: #0074c1;
   color: white;
+}
+
+@media (hover: hover) {
+  .btn-solid:hover {
+    background-color: #225089;
+  }
+}
+
+.btn:active {
+  background-color: #1b3a61;
 }
 
 /* ########## ## States ############ */
@@ -220,30 +242,52 @@ header > div {
 
 /* ########## ## Hamburger ############ */
 
-div.burger-container {
+.burger-container {
+  position: absolute;
+  width: 60px;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   background-color: #3068ad;
   color: white;
-  width: 90px;
   height: 100%;
-  text-align: center;
+  padding-left: 10px;
+  transition: padding 0.25s;
+}
+
+.burger-container.open {
+  padding-left: 13px;
 }
 
 .burger-container > h5 {
   margin-top: 5px;
   font-size: 0.55rem;
   font-weight: 600;
+  letter-spacing: 0.5ch;
+  transition: letter-spacing 0.25s, margin 0.25s;
+}
+
+.burger-container > h5.open {
+  letter-spacing: 0.1ch;
+  margin-left: -2px;
+}
+
+@media (hover: hover) {
+  .burger-container:hover {
+    background-color: #225089;
+  }
+}
+
+.burger-container:active {
+  background-color: #1b3a61;
 }
 
 #burger {
   height: 25px;
-  width: 37px;
+  width: 34.5px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2px;
 }
 
 div.bar {
@@ -251,17 +295,61 @@ div.bar {
   height: 2px;
   border-radius: 2px;
   background-color: white;
+  position: absolute;
+  width: 100%;
+}
+
+#bar-top {
+  top: 0;
+  transform-origin: top left;
+  transition: transform 0.25s;
+}
+
+#bar-mid {
+  top: 43%;
+  opacity: 1;
+  width: 100%;
+  transition: width 0.2s linear, opacity 0.2s linear;
+}
+
+#bar-low {
+  transform-origin: bottom left;
+  bottom: 0;
+  transition: transform 0.25s;
+}
+
+#bar-top.open {
+  transform: rotate(40deg);
+}
+
+#bar-mid.open {
+  opacity: 0;
+  width: 0;
+}
+
+#bar-low.open {
+  transform: rotate(-40deg);
 }
 
 /* ########## ## Title ############ */
 
 .header-title-container {
-  flex-grow: 2;
+  margin-left: 60px;
   align-items: center;
 }
 
 .header-title-container > a {
   margin: 0 15px 0 25px;
+}
+
+@media (hover: hover) {
+  .header-title-container > a:hover {
+    opacity: 50%;
+  }
+}
+
+.header-title-container > a:active {
+  opacity: 100%;
 }
 
 .header-title {
@@ -285,7 +373,7 @@ div.bar {
   }
 
   .header-title-container > a > img {
-    height: 40px;
+    width: 43px;
   }
 
   .header-title > h1 {
@@ -346,8 +434,15 @@ div.bar {
 
 .btn-header-search > .material-symbols-rounded {
   font-variation-settings: "wght" 700;
-  color: #0074c1;
 }
+
+@media (hover: hover) {
+  .btn-header-search > .material-symbols-rounded:hover {
+    color: white;
+  }
+}
+
+/* ######################## # NAV MENU ######################### */
 
 /* ######################## # HERO ######################### */
 
@@ -439,7 +534,7 @@ div.bar {
 
 #services-links {
   width: 90%;
-  margin-top: 30px;
+  margin-top: 50px;
   max-width: 1200px;
 }
 
@@ -480,7 +575,7 @@ div.bar {
 
 #updates-events {
   width: 90%;
-  margin-top: 40px;
+  margin-top: 75px;
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
@@ -578,7 +673,7 @@ div.bar {
   align-items: center;
   justify-content: end;
   gap: 15px;
-  margin: 30px 0;
+  margin: 30px 0 50px;
 }
 
 .back-to-top-container > p {
@@ -596,6 +691,12 @@ div.bar {
   justify-content: center;
 }
 
+@media (hover: hover) {
+  .back-to-top-container > a:hover {
+    filter: brightness(110%);
+  }
+}
+
 /* ######################## # FOOTER ########################## */
 
 footer {
@@ -603,7 +704,7 @@ footer {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 30px 50px;
+  padding: 50px 7vw;
 }
 
 footer > div {
@@ -625,6 +726,7 @@ footer > ul {
 footer > ul > li > a {
   color: white;
   font-size: 0.9rem;
+  text-decoration: none;
 }
 
 .contact-container {
