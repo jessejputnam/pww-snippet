@@ -125,12 +125,14 @@ input {
 
 a {
   color: #0074c1;
+  text-decoration: none;
 }
 
 .link-style-1 {
   font-weight: 600;
   font-size: 18px;
   line-height: 1em;
+  text-decoration: underline;
 }
 
 .flag {
