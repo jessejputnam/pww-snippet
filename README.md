@@ -17,7 +17,7 @@
 
 This is a mock up of a public sector landing page. Written in vanilla JS, HTML, and CSS, the page is accessability compliant (images with alt tags, all links can be tabbed to, buttons with accessible names, etc). It is fully responsive to all screen sizes, adjusting content dynamically. Uses some JS to allow interactive/animated menu, scroll to top, and search bar.
 
-[](/collage.jpg)
+![](./collage.jpg)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
